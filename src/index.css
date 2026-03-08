@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer components {
+    .glass-panel {
+        @apply bg-black/40 backdrop-blur-md border border-white/10 shadow-xl;
+    }
+
+    .text-gold {
+        @apply text-[#D4AF37];
+    }
+
+    .bg-gold {
+        @apply bg-[#D4AF37];
+    }
+
+    .border-gold {
+        @apply border-[#D4AF37];
+    }
+
+    .text-glow {
+        text-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    }
+}
+
+body {
+    @apply bg-neutral-950 text-neutral-50 antialiased overflow-x-hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-neutral-950;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-neutral-800 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-[#D4AF37]/50;
+}
